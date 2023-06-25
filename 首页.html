@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>首页</title>
+  <link rel="stylesheet" href="首页.css">
+  <style>
+    .star {
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      background-color: yellow;
+      pointer-events: none;
+    }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('container');
+
+      function createStar() {
+        const star = document.createElement('div');
+        star.className = 'star';
+        star.style.left = `${Math.random() * container.offsetWidth}px`;
+        star.style.top = `${-Math.random() * container.offsetHeight}px`;
+        return star;
+      }
+
+      function animateStars() {
+        const starCount = 100;
+        for (let i = 0; i < starCount; i++) {
+          const star = createStar();
+          container.appendChild(star);
+        }
+
+        const stars = document.querySelectorAll('.star');
+        stars.forEach((star) => {
+          const speed = Math.random() * 2 + 1;
+          const initialPosition = parseFloat(star.style.top);
+          let position = initialPosition;
+
+          function update() {
+            position += speed;
+            star.style.top = `${position}px`;
+
+            if (position >= container.offsetHeight) {
+              container.removeChild(star);
+            } else {
+              requestAnimationFrame(update);
+            }
+          }
+
+          requestAnimationFrame(update);
+        });
+      }
+
+      animateStars();
+    });
+  </script>
+</head>
+<body>
+<div class="main" id="container">
+  <div class="header">
+    <!-- 这里插入一张图片做首图 -->
+    <p><img src="首图.jpg" width="1520"/></p>
+  </div>
+  <div class="nav">
+    <!-- 这里是导航栏 -->
+    <ul>
+      <a href="角色介绍.html" target="_blank"><li>角色介绍</li></a>
+      <a href="剧情相关.html" target="_blank"><li>剧情相关</li></a>
+      <a href="影视图片.html" target="_blank"><li>影视图片</li></a>
+      <a href="访客登陆.html" target="_blank"><li>访客登陆</li></a>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="image">
+      <img src="http://www.deartutu.com/resourcefolder/20082312352928533_____1.jpg" height="320" width="480"/>
+    </div>
+    <!-- 这个图可以换 -->
+    <div class="p1">
+      <h2><marquee direction="right" width="800"><span style="color:#0a0e50">大耳朵图图</span></marquee></h2>
+      <div class="p2">
+        <h2>&nbsp;&nbsp;&nbsp;&nbsp;介&nbsp;绍</h2>
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>《大耳朵图图》</b>（1-5季）是由速达总导演、叮当（本名黄歆真）编剧，上海电影（集团）有限公司、上海美术电影制片厂有限公司、上海上影大耳朵图图影视传媒有限公司共同出品的<b>二维动画系列片</b>。该剧主要讲述了胡图图和小伙伴的<b>成长故事</b>。 作品于2004年6月1日在中央电视台少儿频道首播，共计130集，每集12分钟左右。
+          《大耳朵图图》的主角灵感来自现实生活，<b>曾获得第23届中国电视金鹰奖“最佳编导”和“优秀长篇美术片”两大奖项</b>。<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>胡图图</b>是一个机灵，淘气聪明的三岁小孩，他天生快乐，心地善良，喜欢多管闲事，精力充沛，对周围的事物非常好奇，并且还有自己独特的见解和超强想象力，<b>他的言行常常让人大跌眼镜</b>。他爱胡思乱想，最大的特点就是好吃，每次一提到说到考试就能想到烤红薯和羊肉串，还会观察想象成一种好喝的茶，而且为了有零食吃可以做出违背自己原则的事情，<b>他的可爱和自作聪明让每个人忍俊不禁</b>。<br>
+        </p>
+      </div>
+      <div class="img1">
+        <p>
+          <img src="http://www.deartutu.com/resourcefolder/200842218352971282tt27-6____.jpg" width="255">
+          <img src="http://www.deartutu.com/resourcefolder/20082201252434463933_____________________.jpg" width="255">
+          <img src="http://www.deartutu.com/resourcefolder/200842218472677841_____.jpg" width="255">
+          <img src="http://www.deartutu.com/resourcefolder/200842218481098224___________.jpg" width="255">
+          <img src="http://www.deartutu.com/resourcefolder/200842218485110066____.jpg" width="255">
+        </p>
+      </div>
+    </div>
+    <!-- 主体部分 -->
+  </div>
+  <div class="footer">
+    <p>希望所有平凡的孩子都能象图图一样愉快、健康地成长。</p>
+  </div>
+</div>
+</body>
+</html>

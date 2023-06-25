@@ -1,0 +1,50 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.header,.nave,.container,.footer{
+  float:left;
+  width:100%;
+}
+.header{
+  background: #0e80d2;
+  padding: 0px  0px;
+  /*尺寸可以改padding*/
+  text-align: center;
+}
+.nav{
+  background: #0a0e50;
+  margin: 0px;
+}
+.nav a{
+  color:white;
+  padding: 10px 20px ;
+  display: inline-block;
+}
+.nav a:hover{
+  background: #0BCCFF;
+  color: black;
+}
+.container{
+  margin: 20px;
+}
+.lside{
+  width:240px;
+  float: left;
+  background-color: #fbedae;
+  padding: 5px;
+  line-height: 2;
+}
+.content{
+  padding: 10px;
+  margin-left: 252px;
+  margin-right: 20px;
+}
+.footer{
+  padding: 20px;
+  margin-top: 50px;
+  background-color: #0BCCFF;
+}

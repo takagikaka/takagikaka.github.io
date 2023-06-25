@@ -1,0 +1,48 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.header,.nave,.container,.footer{
+  float:left;
+  width:100%;
+}
+
+table,th,td
+{
+  border:0px solid black;
+  padding-left: 60px;
+}
+
+.header{
+  background: #0e80d2;
+  padding: 0px  0px;
+  /*尺寸可以改padding*/
+  text-align: center;
+}
+.nav{
+  background: #0a0e50;
+  margin: 0px;
+}
+.nav a{
+  color:white;
+  padding: 10px 20px ;
+  display: inline-block;
+}
+.nav a:hover{
+  background: #0BCCFF;
+  color: black;
+}
+.container{
+  margin: 30px;
+  float: left;
+  text-align: center;
+  line-height: 2;
+}
+.footer{
+  padding: 20px;
+  margin-top: 50px;
+  background-color: #0BCCFF;
+}

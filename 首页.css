@@ -1,0 +1,53 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+}
+
+ .header,.nave,.container,.footer{
+  float:left;
+  width:100%;
+}
+.header{
+  background: #0e80d2;
+  padding: 0px  0px;
+  /*尺寸可以改padding*/
+  text-align: center;
+}
+.nav{
+  background:#0a0e50;
+  margin: 0px;
+}
+.nav a{
+  color:white;
+  padding: 10px 20px ;
+  display: inline-block;
+}
+.nav a:hover{
+  background: #0BCCFF;
+  color: black;
+}
+/*导航栏颜色在这块改*/
+.image{
+  float: left;
+  padding: 30px;
+}
+.p1{
+  padding:25px;
+}
+.p2{
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  line-height:2;
+}
+.img1{
+ float: left;
+  margin:20px;
+}
+.footer{
+  padding: 20px;
+  margin-top: 50px;
+  background-color: #0BCCFF;
+}

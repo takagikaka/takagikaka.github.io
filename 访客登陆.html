@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>访客登陆</title>
+  <link rel="stylesheet" href="访客登陆.css">
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <!-- 这里插入一张图片做首图   -->
+    <p>
+      <img src="首图.jpg" width="1535"/>
+    </p>
+  </div>
+  <div class="nav">
+    <!-- 这里是导航栏   -->
+    <ul>
+      <a href="角色介绍.html"target="_blank"><li>角色介绍</li></a>
+      <a href="剧情相关.html" target="_blank"><li>剧情相关</li></a>
+      <a href="影视图片.html"target="_blank"><li>影视图片</li></a>
+      <a href="访客登陆.html"target="_blank"><li>访客登陆</li></a>
+    </ul>
+  </div>
+
+  <form id="my-form">
+  <div class="container">
+    <ww>
+    <img src="胡图图.jpeg" height="100" width="100"/>嗨！你想要和图图成为好朋友吗？<br>&nbsp;
+    </ww>
+    <div>
+      <label for="nickname">昵称：</label>
+      <input type="text" id="nickname" name="nickname" required>
+    </div>
+    <div>
+      <label for="gender">性别：</label>
+      <select id="gender" name="gender" required>
+        <option value="male">男</option>
+        <option value="female">女</option>
+      </select>
+    </div>
+    <div>
+      <label for="age">年龄：</label>
+      <input type="number" id="age" name="age" min="1" required>
+    </div>
+    <div>
+      <label for="message">想对图图说的话：</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    <button type="submit">提交</button>
+  </form>
+  <div id="modal" style="display: none;">
+    <h2>提交成功！</h2>
+    <p>感谢您的提交。</p >
+  </div>
+  <audio id="audio" src="网页设计期末作业/吴一阳 - 小小快乐魔法师.mp3" autoplay></audio>
+  <script src="./script.js"></script>
+
+<!--      最后弄一个访客信息的表格，不够再扩充-->
+    </table>
+  </div>
+
+  <div class="footer">
+    <p>希望所有平凡的孩子都能像图图一样愉快、健康地成长。</p>
+  </div>
+</div>
+</body>
+</html>
